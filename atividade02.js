@@ -23,3 +23,12 @@ let produtoEmbalado = {
 };
 
 produtoEmbalado.produto();
+
+class Imóvel{
+    quartos;
+    tipo;
+    endereco;
+    exibirInformacoes() {
+        this.casa
+    }
+}
