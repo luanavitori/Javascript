@@ -1,14 +1,3 @@
-//1. Solicite ao usuário para inserir um número representando um dia da
-//semana (1 a 7) e mostre o nome do dia correspondente.
-
-//2. Peça ao usuário para inserir um número de mês (1 a 12) e exiba o nome
-//do mês.
-
-//3. Implementar um programa que simule uma calculadora. O usuário deverá
-//informar dois valores e a operação desejada.
-//Com auxílio de um switch deve ser computado e mostrado o resultado da
-//operação.
-
 import ds from 'readline-sync'
 let dias = ds.questionInt('Digite o dia da semana:');
 
@@ -84,7 +73,43 @@ switch (meses) {
         break;
 }
 
+
 let num1 = ds.questionInt("Digite um numero:");
 let num2 = ds.questionInt("Digite um numero:");
 
-let calcular = ds.calcular('Qual operacao deseja usar?');
+let calcular = ds.question('Qual operacao deseja usar? ');
+
+switch (calcular) {
+    case "adicao":
+        console.log(num1+num2)
+        break;
+    case "subtracao":
+        console.log(num1-num2)
+        break;
+
+        case "multiplicacao":
+        console.log(num1*num2)
+        break;
+        case "divisao":
+        console.log(num1/num2)
+        break;
+    default:
+        console.log("Operação Inválida!")
+        break;
+}
+
+
+let categoria = ds.question("Digite sua categoria:");
+let salario = ds.questionInt("Digite seu salario atual:");
+
+switch (categoria) {
+    case "A":
+        console.log(salario+5%)
+        break;
+
+    default:
+        console.log("Ocorreu algum erro!")
+        break;
+}
+
+
