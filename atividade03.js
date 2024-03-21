@@ -1,4 +1,5 @@
 import ds from 'readline-sync'
+
 let dias = ds.questionInt('Digite o dia da semana:');
 
 switch (dias) {
