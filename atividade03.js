@@ -100,17 +100,29 @@ switch (calcular) {
 }
 
 
-let categoria = ds.question("Digite sua categoria:");
-let salario = ds.questionInt("Digite seu salario atual:");
 
-switch (categoria) {
-    case "A":
-        console.log(salario+5%)
-        break;
+for (let i = 1; i <= 2; i++) {
+   
+    let nome = ds.question(`Informe o nome da ${i}ª pessoa: `);
+    let salario = ds.questionFloat(`Informe o salário de ${nome}: `);
 
-    default:
-        console.log("Ocorreu algum erro!")
-        break;
+   
+    let impostoRenda = 0;
+
+    if (salario <= 2100) {
+        impostoRenda = 0;
+    } else if (salario <= 2800) {
+        impostoRenda = salario * 0.075;
+    } else if (salario <= 3750) {
+        impostoRenda = salario * 0.15;
+    } else if (salario <= 4660) {
+        impostoRenda = salario * 0.225;
+    } else {
+        impostoRenda = salario * 0.275;
+    }
+
+    console.log(`\nImposto de Renda a ser pago`);
+    console.log(`Nome: ${nome} \nImposto de Renda: R$ ${impostoRenda.toFixed(2)}\n`);
 }
 
 

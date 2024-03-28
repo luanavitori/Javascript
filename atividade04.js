@@ -1,5 +1,5 @@
 import ds from 'readline-sync';
-
+/*
 console.log("\t--- Exercícios While ---")
 
 let numero = ds.questionInt("Digite um numero:");
@@ -135,7 +135,7 @@ for (let cor of cores) {
     console.log(cor);
 }
 
-
+*/
 
 console.log("\t------------------------------------")
 
