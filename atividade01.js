@@ -1,5 +1,5 @@
 let nome = "Luana Vitória";
-let idade = "16";
+let idade = "17";
 console.log("Olá meu nome é " +nome+ " e eu tenho " +idade+ " anos.");
 
 console.log("luana".toUpperCase());
