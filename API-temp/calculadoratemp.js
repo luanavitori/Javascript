@@ -1,3 +1,0 @@
-function efetuarCalculoTemp(temp, tipo){
-    
-}
